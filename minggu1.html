@@ -8,8 +8,36 @@
 </head>
 <body>
 <center>
+<script>
+
+window.setTimeout("waktu()",1000); 
+function waktu() { 
+        var tanggal = new Date(); 
+        setTimeout("waktu()",1000); 
+        document.getElementById("jam").innerHTML = tanggal.getHours(); 
+        document.getElementById("menit").innerHTML = tanggal.getMinutes();
+        document.getElementById("detik").innerHTML = tanggal.getSeconds();
+    }
+</script>
+<div id="jam-digital">
+    <div id="hours">
+        <p id="jam"></p>
+    </div>
+    <div id="titik1">
+    	<p>:</p>
+    </div>
+    <div id="minute">
+        <p id="menit"></p>
+    </div>
+    <div id="titik1">
+    	<p>:</p>
+    </div>
+    <div id="second">
+        <p id="detik"></p>
+    </div>
+</div>
 	<h1>Selamat Datang</h1>&nbsp;&nbsp;
-	<ul>
+	<ul class="float">
 		<li><a href="minggu1.html">Minggu 1</a></li>
 		<li><a href="minggu2.html">Minggu 2</a></li>
 		<li><a href="minggu3.html">Minggu 3</a></li>
